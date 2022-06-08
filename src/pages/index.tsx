@@ -512,7 +512,7 @@ const Home = () => {
                 alt=""
                 width="280"
                 height="50.46"
-                className="brightness-full"
+                className="brightness-200 saturate-0"
               />
               <BrandLogoJoin className="lg:py-2">
                 in partnership with
@@ -522,7 +522,7 @@ const Home = () => {
                 alt=""
                 width="135"
                 height="47"
-                className="brightness-full"
+                className="brightness-200 saturate-0"
               />
             </FooterLogoWrapper>
             <div className="text-white my-12">

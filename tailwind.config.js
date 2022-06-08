@@ -14,9 +14,6 @@ module.exports = {
       boxShadow: {
         'inner-1': 'inset 0px 0px 0px 1px rgb(91 102 111 / 20%)',
       },
-      brightness: {
-        full: '10',
-      },
       colors: {
         // Configure your color palette here
         primary: '#0D0630',
