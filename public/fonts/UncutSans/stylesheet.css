@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Uncut Sans';
+    src: url('Uncut-Sans-Regular.eot');
+    src: local('Uncut Sans Regular'), local('Uncut-Sans-Regular'),
+        url('Uncut-Sans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Uncut-Sans-Regular.woff2') format('woff2'),
+        url('Uncut-Sans-Regular.woff') format('woff'),
+        url('Uncut-Sans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

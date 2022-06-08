@@ -1,15 +1,21 @@
+import '../styles/globals.css'
+
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import Script from 'next/script'
-import 'tailwindcss/tailwind.css'
+
 import { GlobalStyles } from 'twin.macro'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Site Name</title>
-        <meta name="description" content="DESCRIPTION" />
+        <title>EduDAO - Career Fair - Jun 15th, 2022 - 8am EST</title>
+        <meta
+          name="description"
+          content="Funding University Ecosystems to support the Innovators of tomorrow"
+        />
+        <meta name="viewport" content="width=device-width" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
