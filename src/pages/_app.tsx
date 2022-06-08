@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           sizes="16x16"
           href="/images/favicon-16x16.png"
         />
-        <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <link href="/favicon.png" rel="shortcut icon" type="image/png" />
         <link rel="manifest" href="/site.webmanifest" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="SITE_NAME" />
