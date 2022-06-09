@@ -43,7 +43,7 @@ const Home = () => {
   return (
     <FlexContainer>
       {/* hero */}
-      <section className="w-full bg-primary">
+      <section className="bg-primary w-full relative">
         <div className="absolute right-0 top-4 p-4 sm:-ml-10 sm:pr-4 stroke-white hover:stroke-orange-dark cursor-pointer lg:hidden">
           <button onClick={() => setOpen(true)}>
             <svg
