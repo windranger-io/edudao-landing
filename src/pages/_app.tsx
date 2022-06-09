@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="/images/apple-touch-icon.png"
+          href="/images/favicon-180x180.png"
         />
         <link
           rel="icon"
@@ -35,19 +35,43 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
         <link href="/favicon.png" rel="shortcut icon" type="image/png" />
         <link rel="manifest" href="/site.webmanifest" />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="SITE_NAME" />
-        <meta property="og:title" content="SITE_TITLE" />
-        <meta property="og:image" content="ABSOLUTE_URL_TO_PREVIEW_IMAGE" />
-        <meta property="og:description" content="DESCRIPTION" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@TWITTER_HANDLE" />
-        <meta name="twitter:creator" content="@TWITTER_HANDLE" />
-        <meta name="twitter:title" content="SITE_TITLE" />
-        <meta name="twitter:description" content="DESCRIPTION" />
+        <meta property="og:site_name" content="EduDAO" />
         <meta
-          name="twitter:image:src"
-          content="ABSOLUTE_URL_TO_PREVIEW_IMAGE"
+          property="og:image"
+          content="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F299578409%2F1002161635883%2F1%2Foriginal.20220608-172712?w=1000&amp;auto=format%2Ccompress&amp;q=75&amp;sharp=10&amp;rect=0%2C0%2C9000%2C4500&amp;s=fcc55dc0d75f79b8b0d7a95ba5a088d2"
+        />
+        <meta property="og:title" content="EduDAO Career Fair" />
+        <meta
+          property="og:description"
+          content="EduDAO is hosting a career fair for students to find dream jobs and opportunities in Decentraland! Scan the QR code to signup for the event!"
+        />
+        <meta
+          property="og:url"
+          content="https://www.eventbrite.com/e/360344799997?aff=efbneb"
+        />
+        <meta property="og:type" content="events.event" />
+        <meta
+          name="twitter:description"
+          content="EduDAO is hosting a career fair for students to find dream jobs and opportunities in Decentraland! Scan the QR code to signup for the event!"
+        />
+        <meta
+          name="twitter:image"
+          content="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F299578409%2F1002161635883%2F1%2Foriginal.20220608-172712?w=1000&amp;auto=format%2Ccompress&amp;q=75&amp;sharp=10&amp;rect=0%2C0%2C9000%2C4500&amp;s=fcc55dc0d75f79b8b0d7a95ba5a088d2"
+        />
+        <meta name="twitter:app:name:iphone" content="Eventbrite: EduDAO" />
+        <meta
+          name="twitter:app:url:iphone"
+          content="com-eventbrite-attendee://event/360344799997/?referrer=eiosurlxtcar&amp;"
+        />
+        <meta name="twitter:app:id:iphone" content="487922291" />
+        <meta name="twitter:app:name:googleplay" content="Eventbrite: EduDAO" />
+        <meta
+          name="twitter:app:url:googleplay"
+          content="com-eventbrite-attendee://event/360344799997/?referrer=eandurlxtcar&amp;"
+        />
+        <meta
+          name="twitter:app:id:googleplay"
+          content="com.eventbrite.attendee"
         />
       </Head>
       <Script
