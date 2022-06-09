@@ -1,5 +1,6 @@
 import { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
+import { PopupButton } from '@typeform/embed-react'
 
 import Image from 'next/image'
 
@@ -10,7 +11,6 @@ import {
   HeroLogoWrapper,
   BrandLogoJoin,
   Heading1,
-  HeroPrimaryPseudoButton,
   HeroSecondaryPseudoButton,
   RoundedImage,
   RoundedImagePseudoButton,
@@ -108,13 +108,13 @@ const Home = () => {
               Funding University Ecosystems to support the Innovators of
               tomorrow
             </Heading1>
-            <HeroPrimaryPseudoButton
-              href="https://www.eventbrite.com/e/edudao-career-fair-tickets-360344799997"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
+
+            <PopupButton
+              id="jIuKP3DN"
+              className="text-2xl text-center w-full inline-block my-14 py-4 px-4 lg:m-6 md:w-auto md:px-24 bg-orange-primary hover:bg-orange-dark text-white rounded"
             >
               Get Involved
-            </HeroPrimaryPseudoButton>
+            </PopupButton>
           </div>
           <div className="lg:order-2 order-1">
             <div className="flex justify-center m-auto">

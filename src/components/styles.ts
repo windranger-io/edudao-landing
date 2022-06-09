@@ -7,7 +7,6 @@ export const HeaderContainer = tw.div`container mx-auto text-white grid lg:grid-
 export const HeroLogoWrapper = tw.div`flex items-start ml-4 py-8 flex-col lg:flex-row lg:place-self-start`
 export const BrandLogoJoin = tw.span`my-4 mx-0 text-grey lg:my-auto font-uncut-sans whitespace-nowrap`
 
-export const HeroPrimaryPseudoButton = tw.a`text-2xl text-center w-full inline-block my-14 py-4 px-4 lg:m-6 md:w-auto md:px-24 bg-orange-primary hover:bg-orange-dark text-white rounded`
 export const HeroSecondaryPseudoButton = tw.a`text-xl text-center m-6 bg-orange-secondary hover:bg-orange-primary text-white py-3 px-4 rounded hidden lg:inline-block absolute`
 
 export const EventDetailsGrid = tw.div`grid grid-flow-row mb-6 lg:mb-4 lg:grid-flow-col lg:grid-cols-3 lg:gap-4 lg:mx-24 lg:my-12 xl:mx-36`
