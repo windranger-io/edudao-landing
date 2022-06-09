@@ -31,6 +31,8 @@ module.exports = {
         dark: '#3E474F',
         darker: '#130F26',
 
+        'mobile-nav-hr': 'rgba(91, 102, 111, 0.2)',
+
         // colors for body components bg linear-gradient
         'grad-yellow': 'rgba(227, 203, 84, 0.2) 14.1%',
         'grad-green': 'rgba(124, 183, 142, 0.2) 68.22%',
