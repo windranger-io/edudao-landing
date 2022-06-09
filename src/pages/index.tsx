@@ -705,7 +705,7 @@ const Home = () => {
                   leaveFrom="translate-x-0"
                   leaveTo="translate-x-full"
                 >
-                  <div className="pointer-events-auto bg-white w-screen relative rounded-b-2xl">
+                  <div className="pointer-events-auto bg-white w-screen min-w-[375px] relative rounded-b-2xl">
                     <div className="w-full h-full from-grad-yellow to-grad-green bg-gradient-[123.23deg] overflow-y-auto max-h-screen">
                       <div className="absolute right-0 top-4 p-4 sm:-ml-10 sm:pr-4">
                         <button
