@@ -6,11 +6,11 @@ import {
   HeaderContainer,
   HeroLogoWrapper,
   BrandLogoJoin,
-  HeroSecondaryButton,
   Heading1,
-  HeroPrimaryButton,
+  HeroPrimaryPseudoButton,
+  HeroSecondaryPseudoButton,
   RoundedImage,
-  RoundedImageButton,
+  RoundedImagePseudoButton,
   EventDetailsGrid,
   EventDetailsCell,
   EventDetailsIcon,
@@ -29,7 +29,7 @@ import {
   SponsorshipList,
   SponsorshipListItem,
   SponsorshipListItemTick,
-  SponsorshipCTAButton,
+  SponsorshipCTAPseudoButton,
   LogoFlexGrid,
   FooterLogoWrapper,
 } from 'components/styles'
@@ -41,14 +41,42 @@ const Home = () => {
       <section className="w-full bg-primary">
         <HeaderContainer className="mb-12">
           <HeroLogoWrapper>
-            <Image src="/images/EduDAO.svg" alt="" width="280" height="50.46" />
+            <a
+              href="https://edudao.io/"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+            >
+              <Image
+                src="/images/EduDAO.svg"
+                width="280"
+                height="50.46"
+                alt="EduDAO"
+              />
+            </a>
             <BrandLogoJoin className="lg:px-4">
               in partnership with
             </BrandLogoJoin>
-            <Image src="/images/BitDAO.svg" alt="" width="135" height="47" />
+            <a
+              href="https://bitdao.io/"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+            >
+              <Image
+                src="/images/BitDAO.svg"
+                width="135"
+                height="47"
+                alt="BitDAO"
+              />
+            </a>
           </HeroLogoWrapper>
           <div className="flex justify-end">
-            <HeroSecondaryButton>RSVP for the Career Fair</HeroSecondaryButton>
+            <HeroSecondaryPseudoButton
+              href="https://www.eventbrite.com/e/edudao-career-fair-tickets-360344799997"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+            >
+              RSVP for the Career Fair
+            </HeroSecondaryPseudoButton>
           </div>
         </HeaderContainer>
         <HeaderContainer>
@@ -57,13 +85,19 @@ const Home = () => {
               Funding University Ecosystems to support the Innovators of
               tomorrow
             </Heading1>
-            <HeroPrimaryButton>Get Involved</HeroPrimaryButton>
+            <HeroPrimaryPseudoButton
+              href="https://www.eventbrite.com/e/edudao-career-fair-tickets-360344799997"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+            >
+              Get Involved
+            </HeroPrimaryPseudoButton>
           </div>
           <div className="lg:order-2 order-1">
             <div className="flex justify-center m-auto">
               <Image
                 src="/images/rocket-man.svg"
-                alt=""
+                alt="Man wearing jetpack illustration"
                 width="547.36"
                 height="590.59"
               />
@@ -73,20 +107,24 @@ const Home = () => {
       </section>
 
       {/* body */}
-      <section className="sm:container mx-auto -mt-16 bg-white rounded-xl shadow-inner-1">
-        <div className="rounded-xl border-grey-border border-b from-grad-yellow to-grad-green bg-gradient-[123.23deg]">
+      <section className="sm:container mx-auto -mt-16 bg-white rounded-2xl shadow-inner-1">
+        <div className="rounded-2xl border-grey-border border-b from-grad-yellow to-grad-green bg-gradient-[123.23deg]">
           <div className="grid grid-flow-row lg:grid-flow-col lg:grid-cols-2 lg:gap-0">
             <div className="grid grid-flow-row justify-center">
-              <RoundedImage className="-mt-12">
+              <RoundedImage className="-mt-6">
                 <Image
                   src="/images/body-image.png"
-                  alt=""
+                  alt="Two people in office setting looking at a whiteboard"
                   width="556"
                   height="669"
                 />
-                <RoundedImageButton className="">
+                <RoundedImagePseudoButton
+                  href="https://www.eventbrite.com/e/edudao-career-fair-tickets-360344799997"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                >
                   RSVP for the Career Fair
-                </RoundedImageButton>
+                </RoundedImagePseudoButton>
               </RoundedImage>
             </div>
             <div className="m-auto py-6 px-12 lg:py-12 lg:pl-12 lg:pr-32">
@@ -105,7 +143,7 @@ const Home = () => {
               <EventDetailsIcon>
                 <Image
                   src="/images/icons/Location.svg"
-                  alt=""
+                  alt="Location"
                   height="32"
                   width="32"
                 />
@@ -119,7 +157,7 @@ const Home = () => {
               <EventDetailsIcon>
                 <Image
                   src="/images/icons/Calendar.svg"
-                  alt=""
+                  alt="Calendar"
                   height="32"
                   width="32"
                 />
@@ -133,7 +171,7 @@ const Home = () => {
               <EventDetailsIcon>
                 <Image
                   src="/images/icons/Clock.svg"
-                  alt=""
+                  alt="Clock"
                   height="32"
                   width="32"
                 />
@@ -201,7 +239,7 @@ const Home = () => {
             {/* Gold */}
             <div className="grid grid-flow-row lg:grid-flow-col lg:grid-cols-3">
               <SponsorshipCard className="group">
-                <div className="p-5">
+                <div className="p-5 h-full flex flex-col">
                   <SponsorshipSummary>
                     <div>
                       <SponsorshipSummaryValue>$10k</SponsorshipSummaryValue>
@@ -215,7 +253,6 @@ const Home = () => {
                         alt="check"
                         height="45"
                         width="45"
-                        className=""
                       />
                     </SponsorshipBadge>
                   </SponsorshipSummary>
@@ -279,13 +316,19 @@ const Home = () => {
                       <span>Feature on Website, and Twitter.</span>
                     </SponsorshipListItem>
                   </SponsorshipList>
-                  <SponsorshipCTAButton>Become a sponsor</SponsorshipCTAButton>
+                  <SponsorshipCTAPseudoButton
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSc5MlCYsK7GHMZ7v8ytLbI1MgEkKPEGvLI-gJn230jAq6O0ZA/viewform"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                  >
+                    Become a sponsor
+                  </SponsorshipCTAPseudoButton>
                 </div>
               </SponsorshipCard>
 
               {/* Silver */}
               <SponsorshipCard className="group">
-                <div className="p-5">
+                <div className="p-5 h-full flex flex-col">
                   <SponsorshipSummary>
                     <div>
                       <SponsorshipSummaryValue>$5k</SponsorshipSummaryValue>
@@ -299,7 +342,6 @@ const Home = () => {
                         alt="check"
                         height="45"
                         width="45"
-                        className=""
                       />
                     </SponsorshipBadge>
                   </SponsorshipSummary>
@@ -352,13 +394,19 @@ const Home = () => {
                       <span>Feature on Website, and Twitter.</span>
                     </SponsorshipListItem>
                   </SponsorshipList>
-                  <SponsorshipCTAButton>Become a sponsor</SponsorshipCTAButton>
+                  <SponsorshipCTAPseudoButton
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSc5MlCYsK7GHMZ7v8ytLbI1MgEkKPEGvLI-gJn230jAq6O0ZA/viewform"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                  >
+                    Become a sponsor
+                  </SponsorshipCTAPseudoButton>
                 </div>
               </SponsorshipCard>
 
               {/* Bronze */}
               <SponsorshipCard className="group">
-                <div className="p-5">
+                <div className="p-5 h-full flex flex-col">
                   <SponsorshipSummary>
                     <div>
                       <SponsorshipSummaryValue>$3k</SponsorshipSummaryValue>
@@ -372,7 +420,6 @@ const Home = () => {
                         alt="check"
                         height="45"
                         width="45"
-                        className=""
                       />
                     </SponsorshipBadge>
                   </SponsorshipSummary>
@@ -414,7 +461,13 @@ const Home = () => {
                       <span>Feature on Website, and Twitter.</span>
                     </SponsorshipListItem>
                   </SponsorshipList>
-                  <SponsorshipCTAButton>Become a sponsor</SponsorshipCTAButton>
+                  <SponsorshipCTAPseudoButton
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSc5MlCYsK7GHMZ7v8ytLbI1MgEkKPEGvLI-gJn230jAq6O0ZA/viewform"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                  >
+                    Become a sponsor
+                  </SponsorshipCTAPseudoButton>
                 </div>
               </SponsorshipCard>
             </div>
@@ -507,27 +560,44 @@ const Home = () => {
         <div className="container mx-auto">
           <div className="grid grid-flow-row lg:grid-flow-col lg:grid-cols-2">
             <FooterLogoWrapper>
-              <Image
-                src="/images/EduDAO.svg"
-                alt=""
-                width="280"
-                height="50.46"
-                className="brightness-200 saturate-0"
-              />
+              <a
+                href="https://edudao.io/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+              >
+                <Image
+                  src="/images/EduDAO.svg"
+                  width="280"
+                  height="50.46"
+                  alt="EduDAO"
+                  className="brightness-200 saturate-0"
+                />
+              </a>
               <BrandLogoJoin className="lg:py-2">
                 in partnership with
               </BrandLogoJoin>
-              <Image
-                src="/images/BitDAO.svg"
-                alt=""
-                width="135"
-                height="47"
-                className="brightness-200 saturate-0"
-              />
+              <a
+                href="https://bitdao.io/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+              >
+                <Image
+                  src="/images/BitDAO.svg"
+                  width="135"
+                  height="47"
+                  alt="BitDAO"
+                  className="brightness-200 saturate-0"
+                />
+              </a>
             </FooterLogoWrapper>
             <div className="text-white my-12">
               <div className="flex justify-center lg:justify-end">
-                <div className="mx-1 flex h-6 hover:text-orange-dark group cursor-pointer">
+                <a
+                  href="https://twitter.com/Edu_DAO"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  className="mx-1 flex h-6 hover:text-orange-dark group cursor-pointer"
+                >
                   <i className="px-2">
                     <svg
                       width="20"
@@ -546,8 +616,13 @@ const Home = () => {
                     </svg>
                   </i>
                   <span className="font-uncut-sans">Twitter</span>
-                </div>
-                <div className="mx-1 flex h-6 hover:text-orange-dark group cursor-pointer">
+                </a>
+                <a
+                  href="https://discord.com/invite/gNQYMBVGxe"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  className="mx-1 flex h-6 hover:text-orange-dark group cursor-pointer"
+                >
                   <i className="px-2">
                     <svg
                       width="24"
@@ -561,11 +636,16 @@ const Home = () => {
                     </svg>
                   </i>
                   <span className="font-uncut-sans">Discord</span>
-                </div>
+                </a>
               </div>
-              <div className="mx-1 flex justify-center lg:justify-end font-extrabold font-uncut-sans mt-4 hover:text-orange-dark cursor-pointer ">
+              <a
+                href="mailto:info@edudao.io"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                className="mx-1 flex justify-center lg:justify-end font-extrabold font-uncut-sans mt-4 hover:text-orange-dark cursor-pointer"
+              >
                 Contact us
-              </div>
+              </a>
             </div>
           </div>
           <hr className="border-grey lg:mx-12" />

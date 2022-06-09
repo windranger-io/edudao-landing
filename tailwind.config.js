@@ -43,6 +43,8 @@ module.exports = {
       md: '.5rem',
       lg: '.5rem',
       xl: '.75rem',
+      '2xl': '1rem',
+      '3xl': '1.5rem',
       full: '50%',
     },
   },
