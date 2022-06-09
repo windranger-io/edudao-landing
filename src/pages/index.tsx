@@ -11,7 +11,7 @@ import {
   HeroLogoWrapper,
   BrandLogoJoin,
   Heading1,
-  HeroSecondaryPseudoButton,
+  HeroNavPseudoButton,
   RoundedImage,
   RoundedImagePseudoButton,
   EventDetailsGrid,
@@ -93,13 +93,13 @@ const Home = () => {
             </a>
           </HeroLogoWrapper>
           <div className="flex justify-end">
-            <HeroSecondaryPseudoButton
+            <HeroNavPseudoButton
               href="https://www.eventbrite.com/e/edudao-career-fair-tickets-360344799997"
               target="_blank"
               rel="nofollow noopener noreferrer"
             >
               RSVP for the Career Fair
-            </HeroSecondaryPseudoButton>
+            </HeroNavPseudoButton>
           </div>
         </HeaderContainer>
         <HeaderContainer>
