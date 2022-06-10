@@ -230,18 +230,18 @@ const Home = () => {
               </LogoWrapper>
               <LogoWrapper>
                 <Image
-                  src="/images/partners/kadena.png"
-                  alt="Kadena"
-                  height="46"
-                  width="153"
+                  src="/images/partners/dydx.svg"
+                  alt="DYDX"
+                  height="35"
+                  width="113"
                 />
               </LogoWrapper>
               <LogoWrapper>
                 <Image
-                  src="/images/partners/kash.png"
-                  alt="Kash"
-                  height="106.67"
-                  width="200"
+                  src="/images/partners/algorand.svg"
+                  alt="Algorand"
+                  height="79"
+                  width="182"
                 />
               </LogoWrapper>
               <LogoWrapper>
