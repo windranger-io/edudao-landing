@@ -216,16 +216,16 @@ const Home = () => {
                 <Image
                   src="/images/partners/near.png"
                   alt="Near"
-                  height="56"
-                  width="210"
+                  height="46"
+                  width="176"
                 />
               </LogoWrapper>
               <LogoWrapper>
                 <Image
                   src="/images/partners/polygon.png"
                   alt="Polygon"
-                  height="54"
-                  width="188"
+                  height="45"
+                  width="158"
                 />
               </LogoWrapper>
               <LogoWrapper>
@@ -246,10 +246,18 @@ const Home = () => {
               </LogoWrapper>
               <LogoWrapper>
                 <Image
+                  src="/images/partners/kadena.png"
+                  alt="Algorand"
+                  height="32"
+                  width="109"
+                />
+              </LogoWrapper>
+              <LogoWrapper>
+                <Image
                   src="/images/partners/gamer.png"
                   alt="GAMER"
-                  height="23"
-                  width="220"
+                  height="18"
+                  width="176"
                 />
               </LogoWrapper>
             </LogoGrid>
