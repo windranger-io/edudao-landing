@@ -6,6 +6,11 @@ import Script from 'next/script'
 
 import { GlobalStyles } from 'twin.macro'
 
+const publicUrl =
+  process.env.NODE_ENV === 'development'
+    ? `http://${process.env.NEXT_PUBLIC_VERCEL_URL}`
+    : `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
+
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
@@ -38,7 +43,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta property="og:site_name" content="EduDAO" />
         <meta
           property="og:image"
-          content="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F299578409%2F1002161635883%2F1%2Foriginal.20220608-172712?w=1000&amp;auto=format%2Ccompress&amp;q=75&amp;sharp=10&amp;rect=0%2C0%2C9000%2C4500&amp;s=fcc55dc0d75f79b8b0d7a95ba5a088d2"
+          content={`${publicUrl}/images/edudao-eventbrite.png`}
         />
         <meta property="og:title" content="EduDAO Career Fair" />
         <meta
@@ -56,7 +61,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
         <meta
           name="twitter:image"
-          content="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F299578409%2F1002161635883%2F1%2Foriginal.20220608-172712?w=1000&amp;auto=format%2Ccompress&amp;q=75&amp;sharp=10&amp;rect=0%2C0%2C9000%2C4500&amp;s=fcc55dc0d75f79b8b0d7a95ba5a088d2"
+          content={`${publicUrl}/images/edudao-eventbrite.png`}
         />
         <meta name="twitter:app:name:iphone" content="Eventbrite: EduDAO" />
         <meta
