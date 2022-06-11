@@ -1,8 +1,11 @@
+import Image from 'next/image'
+
 import { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { PopupButton } from '@typeform/embed-react'
 
-import Image from 'next/image'
+// import BitDAO logo as a Component so that we can style with currentColor
+import BitDAOLogo from '../../public/images/BitDAO.svg'
 
 // Import custom styled elements
 import {
@@ -84,12 +87,7 @@ const Home = () => {
               target="_blank"
               rel="nofollow noopener noreferrer"
             >
-              <Image
-                src="/images/BitDAO.svg"
-                width="135"
-                height="47"
-                alt="BitDAO"
-              />
+              <BitDAOLogo className="text-white" width="135" height="47" />
             </a>
           </HeroLogoWrapper>
           <div className="flex justify-end">
@@ -130,7 +128,7 @@ const Home = () => {
       </section>
 
       {/* body */}
-      <section className="sm:container mx-auto -mt-16 bg-white rounded-2xl shadow-inner-1">
+      <section className="sm:container mx-auto -mt-16 bg-white rounded-2xl shadow-inner-1 z-10">
         <div className="rounded-2xl border-grey-border border-b from-grad-yellow to-grad-green bg-gradient-[123.23deg]">
           <div className="grid grid-flow-row lg:grid-flow-col lg:grid-cols-2 lg:gap-0">
             <div className="grid grid-flow-row justify-center">
@@ -612,12 +610,10 @@ const Home = () => {
                 target="_blank"
                 rel="nofollow noopener noreferrer"
               >
-                <Image
-                  src="/images/BitDAO.svg"
+                <BitDAOLogo
+                  className="text-white brightness-200 saturate-0"
                   width="135"
                   height="47"
-                  alt="BitDAO"
-                  className="brightness-200 saturate-0"
                 />
               </a>
             </FooterLogoWrapper>
@@ -759,11 +755,10 @@ const Home = () => {
                           target="_blank"
                           rel="nofollow noopener noreferrer"
                         >
-                          <Image
-                            src="/images/BitDAO-black.svg"
+                          <BitDAOLogo
+                            className="text-black"
                             width="135"
                             height="47"
-                            alt="BitDAO"
                           />
                         </a>
                       </HeroLogoWrapper>
