@@ -46,7 +46,7 @@ const Home = () => {
   return (
     <FlexContainer>
       {/* hero */}
-      <section className="bg-primary w-full relative">
+      <section className="bg-primary w-full">
         <div className="absolute right-0 top-4 p-4 sm:-ml-10 sm:pr-4 stroke-white hover:stroke-orange-dark cursor-pointer lg:hidden">
           <button onClick={() => setOpen(true)}>
             <svg
@@ -128,7 +128,7 @@ const Home = () => {
       </section>
 
       {/* body */}
-      <section className="sm:container mx-auto -mt-16 bg-white rounded-2xl shadow-inner-1 z-10">
+      <section className="sm:container mx-auto -mt-16 bg-white rounded-2xl shadow-inner-1">
         <div className="rounded-2xl border-grey-border border-b from-grad-yellow to-grad-green bg-gradient-[123.23deg]">
           <div className="grid grid-flow-row lg:grid-flow-col lg:grid-cols-2 lg:gap-0">
             <div className="grid grid-flow-row justify-center">
