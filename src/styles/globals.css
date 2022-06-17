@@ -1,7 +1,5 @@
-@import url('/fonts/NeueMachina/stylesheet.css');
 @import url('/fonts/UncutSans/stylesheet.css');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
