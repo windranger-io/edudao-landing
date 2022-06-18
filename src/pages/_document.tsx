@@ -13,7 +13,7 @@ const MyDocument = (/*props: DocumentInitialProps*/) => {
       <Head>
         <link
           rel="preload"
-          href="/fonts/uncut-sans/Uncut-Sans-Regular.woff2"
+          href="/fonts/UncutSans/Uncut-Sans-Regular.woff2"
           as="font"
           type="font/woff2"
           crossOrigin="true"
