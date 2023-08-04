@@ -1,35 +1,35 @@
 // import react and hooks
-import { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { PopupButton } from '@typeform/embed-react'
+import { Fragment, useState } from 'react'
 
 // import brand logos
-import BitDAOLogo from '../../public/images/BitDAO.svg'
 import EduDAOLogo from '../../public/images/EduDAO.svg'
+import MantleLogo from '../../public/images/logo-mantle.svg'
 
 // import social icons
-import TwitterLogo from '../../public/images/icons/Twitter.svg'
 import DiscordLogo from '../../public/images/icons/Discord.svg'
+import TwitterLogo from '../../public/images/icons/Twitter.svg'
 
 // import mobile-nav state controls
-import NavOpen from '../../public/images/icons/NavOpen.svg'
 import NavClose from '../../public/images/icons/NavClose.svg'
+import NavOpen from '../../public/images/icons/NavOpen.svg'
 
 // import components
 import Image from 'next/image'
 
 // import custom styled elements
 import {
-  FlexContainer,
-  HeaderContainer,
-  HeroLogoWrapper,
   BrandLogoJoin,
+  FlexContainer,
+  FooterLogoWrapper,
+  HeaderContainer,
   Heading1,
   Heading2,
-  RoundedImage,
-  LogoWrapper,
+  HeroLogoWrapper,
   LogoFlexGrid,
-  FooterLogoWrapper,
+  LogoWrapper,
+  RoundedImage,
 } from 'components/styles'
 
 const Home = () => {
@@ -58,16 +58,11 @@ const Home = () => {
               in partnership with
             </BrandLogoJoin>
             <a
-              href="https://bitdao.io/"
+              href="https://mantle.xyz"
               target="_blank"
               rel="nofollow noopener noreferrer"
             >
-              <BitDAOLogo
-                className="text-white"
-                width="135"
-                height="47"
-                alt="BitDAO"
-              />
+              <MantleLogo className="text-white" height="50" alt="Mantle" />
             </a>
           </HeroLogoWrapper>
         </HeaderContainer>
@@ -233,15 +228,15 @@ const Home = () => {
                 in partnership with
               </BrandLogoJoin>
               <a
-                href="https://bitdao.io/"
+                href="https://mantle.xyz"
                 target="_blank"
                 rel="nofollow noopener noreferrer"
               >
-                <BitDAOLogo
+                <MantleLogo
                   className="text-white brightness-200 saturate-0"
                   width="135"
                   height="47"
-                  alt="BitDAO"
+                  alt="Mantle"
                 />
               </a>
             </FooterLogoWrapper>
@@ -351,15 +346,15 @@ const Home = () => {
                           in partnership with
                         </BrandLogoJoin>
                         <a
-                          href="https://bitdao.io/"
+                          href="https://mantle.xyz"
                           target="_blank"
                           rel="nofollow noopener noreferrer"
                         >
-                          <BitDAOLogo
+                          <MantleLogo
                             className="text-black"
                             width="135"
                             height="47"
-                            alt="BitDAO"
+                            alt="Mantle"
                           />
                         </a>
                       </HeroLogoWrapper>
